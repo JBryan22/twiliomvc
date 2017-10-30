@@ -1,0 +1,14 @@
+﻿@model IEnumerable<TwilioMVC.Models.Contact>
+
+<h1>Address Book</h1>
+
+@foreach(var contact in Model)
+{
+    <p>Name: @contact.Name</p>
+    <p>Number: @contact.Number</p>
+}
+
+
+<div>
+@Html.ActionLink("Go back home", "Index", "Home")
+</div>
